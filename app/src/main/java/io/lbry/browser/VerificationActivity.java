@@ -104,11 +104,13 @@ public class VerificationActivity extends FragmentActivity implements SignInList
                 flowHandled = true;
             } else if (flow == VERIFICATION_FLOW_REWARDS) {
                 User user = Lbryio.currentUser;
-                if (!user.isIdentityVerified()) {
+                // disable phone verification for now
+                /*if (!user.isIdentityVerified()) {
                     // phone number verification required
                     viewPager.setCurrentItem(VerificationPagerAdapter.PAGE_VERIFICATION_PHONE, false);
                     flowHandled = true;
-                } else if (!user.isRewardApproved()) {
+                } else */
+                if (!user.isRewardApproved()) {
                     // manual verification required
                     viewPager.setCurrentItem(VerificationPagerAdapter.PAGE_VERIFICATION_MANUAL, false);
                     flowHandled = true;
@@ -195,10 +197,14 @@ public class VerificationActivity extends FragmentActivity implements SignInList
                     ViewPager2 viewPager = findViewById(R.id.verification_pager);
                     // for rewards, (show phone verification if not done, or manual verification if required)
                     if (flow == VERIFICATION_FLOW_REWARDS) {
-                        if (!user.isIdentityVerified()) {
+                        // skipping phone verification
+                        /*if (!user.isIdentityVerified()) {
                             // phone number verification required
                             viewPager.setCurrentItem(VerificationPagerAdapter.PAGE_VERIFICATION_PHONE, false);
-                        } else if (!user.isRewardApproved()) {
+                        } else
+                        */
+                        if (!user.isRewardApproved()) {
+
                             // manual verification required
                             viewPager.setCurrentItem(VerificationPagerAdapter.PAGE_VERIFICATION_MANUAL, false);
                         } else {
