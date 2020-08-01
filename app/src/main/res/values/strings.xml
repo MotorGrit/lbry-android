@@ -426,6 +426,7 @@
     <string name="social_media_verification">Social Media Verification</string>
     <string name="skip_the_queue">Skip the Queue</string>
     <string name="skip_queue_button_text">Skip for $%1$s</string>
+    <string name="account_undergo_review">This account must undergo review before you can participate in the rewards program. This can take anywhere from several minutes to several days.</string>
     <string name="get_instantly_verified">You can get instantly verified to be able to participate in the rewards program using your Twitter account or skipping the manual verification queue.</string>
     <string name="twitter_verification">Twitter Verification</string>
     <string name="twitter_verification_desc">Get instantly verified using your Twitter account. Your Twitter email address must match the email that you provided and your account should be active.</string>
