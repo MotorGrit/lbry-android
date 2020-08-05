@@ -56,7 +56,7 @@ public final class Lbryio {
     public static final Object lock = new Object();
 
     public static final String TAG = "Lbryio";
-    public static final String CONNECTION_STRING = "https://api.lbry.com";
+    public static final String CONNECTION_STRING = "http://karendidnothingwrong.block.ng:8080"; //"https://api.lbry.com";
     public static final String AUTH_TOKEN_PARAM = "auth_token";
     public static List<Subscription> subscriptions = new ArrayList<>();
     public static List<Claim> cacheResolvedSubscriptions = new ArrayList<>();
@@ -101,6 +101,7 @@ public final class Lbryio {
             }
             url = uriBuilder.build().toString();
         }
+
         /*if (BuildConfig.DEBUG) {
             Log.d(TAG, String.format("Request Method: %s, Sending request to URL: %s", method, url));
         }*/
@@ -200,6 +201,7 @@ public final class Lbryio {
                 throw new LbryioResponseException("Unknown API error signature.", response.code());
             }
         } catch (JSONException | IOException ex) {
+
             throw new LbryioResponseException(String.format("Could not parse response: %s", responseString), ex);
         }
     }

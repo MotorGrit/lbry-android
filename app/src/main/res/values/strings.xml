@@ -442,6 +442,12 @@
     <string name="please_enter_valid_phone">Please enter a valid phone number.</string>
     <string name="please_enter_verification_code">Please enter the verification code sent to your phone number.</string>
     <string name="fetch_current_user_error">User account could not be retrieved at this time. Please try again later.</string>
+    <string name="purchase_request_pending">Your purchase request is still being processed. Please send an email to support@lbry.com.</string>
+    <string name="purchase_request_failed_error">Your purchase request could not be completed at this time. Please send an email to support@lbry.com.</string>
+    <string name="twitter_account_ineligible">Your Twitter account is not eligible at this time: %1$s</string>
+    <string name="twitter_verification_not_approved">Your account was not approved for the rewards program. Please try again later.</string>
+    <string name="twitter_verification_failed">Twitter verification failed. Please try again later.</string>
+    <string name="reward_verification_successful">You are now eligible to participate in the rewards program!</string>
 
     <!-- Forms -->
     <string name="no_added_tags">You have not added any tags yet. Add tags to improve discovery.</string>
